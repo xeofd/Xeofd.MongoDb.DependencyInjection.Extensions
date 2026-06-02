@@ -1,4 +1,4 @@
-﻿namespace Xaobec.MongoDbExtension;
+﻿namespace Xeofd.MongoDbExtension;
 
 public class MongoDbOptions
 {

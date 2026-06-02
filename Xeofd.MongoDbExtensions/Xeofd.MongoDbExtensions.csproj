@@ -4,7 +4,7 @@
         <TargetFrameworks>net9.0;.net8.0;</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Xaobec.MongoDbExtension</RootNamespace>
+        <RootNamespace>Xeofd.MongoDbExtension</RootNamespace>
         <Description>A simple MongoDB client dependency injection package</Description>
         <PackageTags>MongoDb;</PackageTags>
     </PropertyGroup>

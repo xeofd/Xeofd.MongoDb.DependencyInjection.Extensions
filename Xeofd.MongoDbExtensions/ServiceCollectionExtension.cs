@@ -2,16 +2,17 @@
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
 
-namespace Xaobec.MongoDbExtension;
+namespace Xeofd.MongoDbExtension;
 
 public static class ServiceCollectionExtension
 {
-    public static IServiceCollection AddMongoDb(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddMongoDb(this IServiceCollection services, IConfiguration configuration,
+        Action<MongoClientSettings>? configureSettings = null)
     {
         services.Configure<MongoDbOptions>(configuration.GetSection("MongoDb"));
-        services.AddTransient<MongoDbUrlBuilder>();
-        services.AddSingleton<IMongoClient>(provider => 
-            new MongoClient(provider.GetRequiredService<MongoDbUrlBuilder>().Build()));
+        services.AddTransient<MongoDbSettingsBuilder>();
+        services.AddSingleton<IMongoClient>(provider =>
+            new MongoClient(provider.GetRequiredService<MongoDbSettingsBuilder>().Build(configureSettings)));
         services.AddTransient<IMongoDatabase>(s =>
             s.GetRequiredService<IMongoClient>()
                 .GetDatabase(configuration.GetValue<string>("MongoDb:DatabaseName", "defaultDatabase")));
