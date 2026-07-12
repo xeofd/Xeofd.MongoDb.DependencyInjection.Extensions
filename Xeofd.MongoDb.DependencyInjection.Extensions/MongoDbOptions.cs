@@ -1,4 +1,4 @@
-﻿namespace Xeofd.MongoDbExtension;
+﻿namespace Xeofd.MongoDb.DependencyInjection.Extensions;
 
 public class MongoDbOptions
 {

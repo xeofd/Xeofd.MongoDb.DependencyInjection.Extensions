@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xeofd.MongoDbExtensions", "Xeofd.MongoDbExtensions\Xeofd.MongoDbExtensions.csproj", "{05FCD689-9441-4F80-A278-E3C1F41FCCD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xeofd.MongoDb.DependencyInjection.Extensions", "Xeofd.MongoDb.DependencyInjection.Extensions\Xeofd.MongoDb.DependencyInjection.Extensions.csproj", "{05FCD689-9441-4F80-A278-E3C1F41FCCD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

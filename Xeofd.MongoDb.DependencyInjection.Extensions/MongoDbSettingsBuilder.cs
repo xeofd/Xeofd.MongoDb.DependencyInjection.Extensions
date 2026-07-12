@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace Xeofd.MongoDbExtension;
+namespace Xeofd.MongoDb.DependencyInjection.Extensions;
 
 public class MongoDbSettingsBuilder(IOptions<MongoDbOptions> options)
 {

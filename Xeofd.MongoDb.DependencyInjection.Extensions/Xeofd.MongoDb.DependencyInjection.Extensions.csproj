@@ -4,15 +4,15 @@
         <TargetFrameworks>net9.0;.net8.0;</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Xeofd.MongoDbExtension</RootNamespace>
+        <RootNamespace>Xeofd.MongoDb.DependencyInjection.Extensions</RootNamespace>
         <Description>A simple MongoDB client dependency injection package</Description>
         <PackageTags>MongoDb;</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup>
-        <PackageId>Xeofd.MongoDbExtension</PackageId>
+        <PackageId>Xeofd.MongoDb.DependencyInjection.Extensions</PackageId>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/xeofd/Xeofd.MongoDbExtension</RepositoryUrl>
+        <RepositoryUrl>https://github.com/xeofd/Xeofd.MongoDb.DependencyInjection.Extensions</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
